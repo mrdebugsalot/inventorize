@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.wrangler/
+apps/hub/data/
+*.db
+*.db-*
+.env
+.env.*
+!.env.example
+.dev.vars
+*.log
+.DS_Store

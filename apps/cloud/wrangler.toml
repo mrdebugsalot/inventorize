@@ -1,0 +1,13 @@
+# Cloud relay: one Durable Object per household, on a free *.workers.dev URL.
+# Deploy with `npm run relay:deploy` after `npx wrangler login`.
+name = "inventorize-relay"
+main = "src/index.ts"
+compatibility_date = "2025-11-01"
+
+[[durable_objects.bindings]]
+name = "HOUSEHOLD"
+class_name = "Household"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Household"]
